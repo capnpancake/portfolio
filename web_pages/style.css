@@ -1,0 +1,83 @@
+#indexbgimage {
+	background-image: url("images/pancakes.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#projectsbgimage {
+	background-image: url("images/coffee_mugs.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#aboutbgimage {
+	background-image: url("images/spread.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#contactbgimage {
+	background-image: url("images/view.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.navlinks{
+    font: bold 16px arial;
+	font-variant: small-caps;
+	color: white;
+	opacity: 0.8;
+	text-decoration: none;
+	text-align: right;
+}
+.navlinks:hover{
+	opacity: 1;
+}
+
+.right{
+    display: flex;
+    flex-wrap: nowrap;
+	float: right;
+}
+
+.container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.card {
+	padding: 20px;
+	margin: 10px;
+	background-color: rgba(211, 211, 211, 0.8);
+	border-radius: 5px;
+	font: bold 16px arial;
+	color: white;
+ 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ 	transition: 0.3s;
+ 	width: 40%;
+}
+
+.card > a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	opacity: 0.8;
+}
+
+.card:hover {
+  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+header {
+	background-color: gray;
+	color: white;
+	font: bold 32px Arial;
+	width: 95%;
+	padding: 20px;
+	margin: 10px;
+}
