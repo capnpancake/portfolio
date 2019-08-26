@@ -11,7 +11,7 @@
         $(function(){
             $(".card").click(function(){
                 var ident = "#" + $(this).attr('id') + "info";
-                if $(ident).is(:hidden){
+                if $(ident).is(":hidden"){
                     $(ident).slideDown();
                 } else {$(ident.slideUp();}
             });
