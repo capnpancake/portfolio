@@ -10,8 +10,8 @@
     <script>
         $(function(){
             $(".card").click(function(){
-                var ident = "#" + $(this).attr('id') + "info";
-                $(ident).slideToggle();
+                console.log("clicked");
+                $("#" + $(this).attr('id') + "info").slideToggle();
             });
         });
     </script>
@@ -27,18 +27,20 @@
             <a class="navlinks" href="contact.html">contact</a> &nbsp
         </div>
     </nav>
+
     <header>
         Projects
     </header>
 
     <div id="container">
-        <article class="card" style="width: 90%;">
+        <article class="card">
             <h1 style="text-align: center">-MEALS ARE BEING PREPPED IN THE KITHCEN-</h1>
             <p>Thanks for you patience while I get my web applications connected to this site. I'll have them out to you in just a few minutes!</p>
         </article>
-        <article class="card" id="pet" style="width: 90%;">
-            <label style="color: black;">Pet Supplies</label>
-            <section id="petinfo" hidden>
+        <article class="card" id="pet">
+
+            <label  style="color: black;">Pet Supplies</label>
+            <section id="petinfo" style="display:none;">
                 <p>
                     An e-commerce site created by myself and a team of classmates. The product of our capstone course for Chattahoochee Tech's
                     Associate's of Applied Science in Computer Programming program. This application has a customer side for creating customer
@@ -51,12 +53,14 @@
                     <li>HTML5 and CSS3</li>
                     <li>Microsoft Access Database and SQL</li>
                 </ul>
-                <a href="#" style="color: black, float: right;">Open Project</a>
+                <a href="#" style="color: black; float: right;">Open Project</a>
             </section>
+
         </article>
-        <article class="card" id="dentist" style="width: 90%;">
+        <article class="card" id="dentist">
+
             <label style="color: black;">Dentist Office</label>
-            <section id="dentistinfo" hidden>
+            <section id="dentistinfo" style="display:none;">
                 <p>
                     This web app is designed for patients to set up and edit appointments with a dentist. Completed as a solo project through
                     Chattahoochee Tech's Java III course.
@@ -66,8 +70,9 @@
                     <li>Servlets</li>
                     <li>HTML and CSS</li>
                 </ul>
-                <a href="#" style="color: black, float: right;">Open Project</a>
+                <a href="#" style="color: black; float: right;">Open Project</a>
             </section>
+
         </article>
     </div>
 </body>
