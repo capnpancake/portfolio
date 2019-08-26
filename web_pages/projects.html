@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+    <script>
+        $(function(){
+            $("label").click(){
+                $(".project_info").slideToggle();
+            }
+        });
+    </script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body id="projectsbgimage">
@@ -23,36 +31,42 @@
     </header>
 
     <div id="container">
-        <article class="card" style="width: 70%;">
+        <article class="card" style="width: 90%;">
             <h1 style="text-align: center">-MEALS ARE BEING PREPPED IN THE KITHCEN-</h1>
             <p>Thanks for you patience while I get my web applications connected to this site. I'll have them out to you in just a few minutes!</p>
         </article>
-        <article class="card">
-            <a href="#" style="color: black;">PetSupplies.com</a>
-            <p>
-                An e-commerce site created by myself and a team of classmates. The product of our capstone course for Chattahoochee Tech's
-                Associate's of Applied Science in Computer Programming program. This application has a customer side for creating customer
-                accounts, filling shopping carts, checking out - as a guest or returning customer, etc. There is also an application for the
-                server side in which a hypothetical employee can login and see fulfilled and unfulfilled orders and prepare them for shipment
-                or return.
-            </p>
-            <ul>
-                <li>Heavy focus on Java servlets and JSPs</li>
-                <li>HTML5 and CSS3</li>
-                <li>Microsoft Access Database and SQL</li>
-            </ul>
+        <article class="card" style="width: 90%;">
+            <label style="color: black;">Pet Supplies</label>
+            <section class="project-info" hidden>
+                <p>
+                    An e-commerce site created by myself and a team of classmates. The product of our capstone course for Chattahoochee Tech's
+                    Associate's of Applied Science in Computer Programming program. This application has a customer side for creating customer
+                    accounts, filling shopping carts, checking out - as a guest or returning customer, etc. There is also an application for the
+                    server side in which a hypothetical employee can login and see fulfilled and unfulfilled orders and prepare them for shipment
+                    or return.
+                </p>
+                <ul>
+                    <li>Heavy focus on Java servlets and JSPs</li>
+                    <li>HTML5 and CSS3</li>
+                    <li>Microsoft Access Database and SQL</li>
+                </ul>
+                <a href="#" style="color: black, float: right;">Open Project</a>
+            </section>
         </article>
-        <article class="card">
-            <a href="#" style="color: black;">Dentist Office</a>
-            <p>
-                This web app is designed for patients to set up and edit appointments with a dentist. Completed as a solo project through
-                Chattahoochee Tech's Java III course.
-            </p>
-            <ul>
-                <li>Database</li>
-                <li>Servlets</li>
-                <li>HTML and CSS</li>
-            </ul>
+        <article class="card" style="width: 90%;">
+            <label style="color: black;">Dentist Office</label>
+            <section class="project-info" hidden>
+                <p>
+                    This web app is designed for patients to set up and edit appointments with a dentist. Completed as a solo project through
+                    Chattahoochee Tech's Java III course.
+                </p>
+                <ul>
+                    <li>Database</li>
+                    <li>Servlets</li>
+                    <li>HTML and CSS</li>
+                </ul>
+                <a href="#" style="color: black, float: right;">Open Project</a>
+            </section>
         </article>
     </div>
 </body>
