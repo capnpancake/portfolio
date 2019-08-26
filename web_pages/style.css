@@ -52,6 +52,7 @@ img {
 .navlinks:hover{
 	opacity: 1;
 	text-decoration: none;
+	color: white;
 }
 
 .right{

@@ -9,9 +9,12 @@
 
     <script>
         $(function(){
-            $("label").click(){
-                $(".project_info").slideToggle();
-            }
+            $(".card").click(function(){
+                var ident = "#" + $(this).attr('id') + "info";
+                if $(ident).is(:hidden){
+                    $(ident).slideDown();
+                } else {$(ident.slideUp();}
+            });
         });
     </script>
 
@@ -35,9 +38,9 @@
             <h1 style="text-align: center">-MEALS ARE BEING PREPPED IN THE KITHCEN-</h1>
             <p>Thanks for you patience while I get my web applications connected to this site. I'll have them out to you in just a few minutes!</p>
         </article>
-        <article class="card" style="width: 90%;">
+        <article class="card" id="pet" style="width: 90%;">
             <label style="color: black;">Pet Supplies</label>
-            <section class="project-info" hidden>
+            <section id="petinfo" hidden>
                 <p>
                     An e-commerce site created by myself and a team of classmates. The product of our capstone course for Chattahoochee Tech's
                     Associate's of Applied Science in Computer Programming program. This application has a customer side for creating customer
@@ -53,9 +56,9 @@
                 <a href="#" style="color: black, float: right;">Open Project</a>
             </section>
         </article>
-        <article class="card" style="width: 90%;">
+        <article class="card" id="dentist" style="width: 90%;">
             <label style="color: black;">Dentist Office</label>
-            <section class="project-info" hidden>
+            <section id="dentistinfo" hidden>
                 <p>
                     This web app is designed for patients to set up and edit appointments with a dentist. Completed as a solo project through
                     Chattahoochee Tech's Java III course.
